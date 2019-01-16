@@ -1,0 +1,12 @@
+table:
+CREATE TABLE person (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  email varchar(255) NOT NULL,
+  name varchar(255) NOT NULL,
+  status int(1) NOT NULL,
+  PRIMARY KEY (id),
+  UNIQUE KEY email (email) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+INSERT INTO person VALUES ('1', '123456qq.com', 'zzz', '0');
+SET FOREIGN_KEY_CHECKS=1;
